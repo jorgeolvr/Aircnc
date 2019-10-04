@@ -13,8 +13,11 @@ mongoose.connect(
   }
 );
 
-// req.query -> Acessar query params (para filtros)
-// req.params -> Acessar route params (para edição, delete)
+// GET, POST, PUT, DELETE
+
+// req.query = Acessar query params (para filtros)
+// req.params = Acessar route params (para edição, delete)
+// req.body = Acessar route params (para criação, edição)
 
 app.use(express.json());
 app.use(routes);
